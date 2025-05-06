@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Normalize.css should go first -->
+    <link rel="stylesheet" href="normalize.css" />
+
+    <!-- Your custom styles -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Bootstrap Styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <title>School Projects</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>School Projects</h1>
+    </header>
+
+
+
+    <main>
+
+        <nav>
+            <h2>Nav</h2>
+            <ul>
+                <li><a href="index.html">About me</a></li>
+                <li><a href="school-projects.html">School Projects</a></li>
+                <li><a href="independent-projects.html">Independent Projects</a></li>
+            </ul>
+        </nav>
+
+        <article>
+
+            <h3>Terry's Tech</h3>
+
+            <img src="images/Terry-tech.png" alt="Screenshot of Terry's Tech Home Page" width="100%" >
+
+            <div class="project-description">
+                <h4>Description</h4>
+                <p>Long description detailing what the project is. Include details about how long it took and what you
+                    learned from doing the project. What went well what could be improved upon so on and so forth.
+                    include the purpose of the project as well as what the finished product accomplished.
+                </p>
+                <p>Link to the project: <a href="#">Terry's tech</a></p>
+            </div>
+
+            <div class="tools-used">
+                <h4>Tools/Resources Used</h4>
+                <!-- In order of most used ot least used (approximation) -->
+                <ul>
+                    <li>Python</li>
+                    <li>MySQL</li>
+                    <li>Html</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Flask</li>
+                    <li>Google API</li>
+                    <li>Bootstrap</li>
+                    <li>FontAwesome</li>
+                    <li>Adobe Color</li>
+                </ul>
+            </div>
+
+            <div class="video-walkthrough">
+                <h4>Video Walkthrough</h4>
+                <video width="100%" height="360" controls>
+                    <source src="videos/terrys-tech.mp4" type="video/mp4">
+                    <source src="videos/terrys-tech.mp4" type="video/webm">
+                    Your browser does not support the video tag.
+                  </video>
+            </div>
+
+            <div class="project-pictures">
+                <h4>Pictures</h4>
+
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="images/Ev-El.png" alt=""></div>
+                        <div class="swiper-slide"><img src="images/I211-AO.png" alt=""></div>
+                        <div class="swiper-slide"><img src="images/Terry-tech.png" alt=""> </div>
+                        ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
+
+            </div>
+
+
+        </article>
+
+    </main>
+
+    <footer>
+        <h4>Contact Me</h4>
+        <div class="contact-info">
+            <div class="email">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:calebthomas556@gmail.com"> calebthomas556@gmail.com</a>
+            </div>
+
+            <div class="phone-number">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+1-812-589-5996"> (812) 589-5996</a>
+            </div>
+
+            <div class="linkedin">
+                <i class="fab fa-linkedin fa-lg"></i>
+                <a href="https://www.linkedin.com/in/caleb-thomas-4aa92a225/">LinkedIn</a>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        });
+
+    </script>
+
+</body>
+
+</html>
